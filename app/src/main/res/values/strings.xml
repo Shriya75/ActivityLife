@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ActivityLifeCycle</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+
+    <string name="btn">Button</string>
+    <string name="message">Hello Geeks!! This is a Button.</string>
 </resources>
