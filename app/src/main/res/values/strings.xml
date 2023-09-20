@@ -4,6 +4,22 @@
     <string name="add_widget">Add widget</string>
     <string name="app_widget_description">This is an app widget description</string>
 
+    <string name="dialog_message">Welcome to Alert Dialog</string>
+    <string name="dialog_title"> Alert Dialog</string>
     <string name="btn">Button</string>
     <string name="message">Hello Geeks!! This is a Button.</string>
+    <string-array name="array_technology">
+        <item>Android</item>
+        <item>Java</item>
+        <item>Php</item>
+        <item>Hadoop</item>
+        <item>Sap</item>
+        <item>Python</item>
+        <item>Ajax</item>
+        <item>C++</item>
+        <item>Ruby</item>
+        <item>Rails</item>
+        <item>.Net</item>
+        <item>Perl</item>
+    </string-array>
 </resources>

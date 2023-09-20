@@ -13,6 +13,63 @@
         android:theme="@style/Theme.ActivityLifeCycle"
         tools:targetApi="31">
         <activity
+            android:name=".ImageAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".ImageSlider"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalView"
+            android:exported="false" />
+        <activity
+            android:name=".VerticalScrollview"
+            android:exported="false" />
+        <activity
+            android:name=".MyAnalogandDigitalclock"
+            android:exported="false" />
+        <activity
+            android:name=".MySeekBar"
+            android:exported="false" />
+        <activity
+            android:name=".MyWebView"
+            android:exported="false" />
+        <activity
+            android:name=".MyRatingBar"
+            android:exported="false" />
+        <activity
+            android:name=".MyListView"
+            android:exported="false" />
+        <activity
+            android:name=".MySpinner"
+            android:exported="false" />
+        <activity
+            android:name=".AlertDialouge"
+            android:exported="false" />
+        <activity
+            android:name=".CustomRadio"
+            android:exported="false" />
+        <activity
+            android:name=".DynamicRadio"
+            android:exported="false" />
+        <activity
+            android:name=".MyRadio"
+            android:exported="false" />
+        <activity
+            android:name=".CustomCheckBox"
+            android:exported="false" />
+        <activity
+            android:name=".MyCheckBox"
+            android:exported="false" />
+        <activity
+            android:name=".CustomToast"
+            android:exported="false" />
+        <activity
+            android:name=".MyToast"
+            android:exported="false" />
+        <activity
+            android:name=".MyCamera"
+            android:exported="false" />
+        <activity
             android:name=".MyDateValidation"
             android:exported="false" />
         <activity
@@ -28,13 +85,13 @@
             android:name=".Mytimepicker"
             android:exported="false" />
         <activity
-            android:name=".DatePicker"
+            android:name=".MyDatePicker"
             android:exported="false" />
         <activity
             android:name=".Toggle"
             android:exported="false" />
         <activity
-            android:name=".AutoCompleteTextView"
+            android:name=".MyAutoCompleteActivity"
             android:exported="false" />
 
         <receiver
@@ -69,6 +126,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.ActivityLifeCycle.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
     </application>
 
 </manifest>
