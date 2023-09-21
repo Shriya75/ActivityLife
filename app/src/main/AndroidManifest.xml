@@ -13,10 +13,7 @@
         android:theme="@style/Theme.ActivityLifeCycle"
         tools:targetApi="31">
         <activity
-            android:name=".ImageAdapter"
-            android:exported="false" />
-        <activity
-            android:name=".ImageSlider"
+            android:name=".WidgetActivity"
             android:exported="false" />
         <activity
             android:name=".HorizontalView"

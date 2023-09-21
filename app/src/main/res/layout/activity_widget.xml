@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WidgetActivity">
+
+    <!-- Button to open the camera -->
+    <Button
+        android:id="@+id/camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Camera"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- ImageView to display the captured image -->
+    <ImageView
+        android:id="@+id/click_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/camera_button"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/placeholder_image" />
+
+    <!-- CheckBoxes for selecting items -->
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza"
+        android:layout_below="@id/click_image"
+        android:layout_alignLeft="@id/click_image"
+        android:layout_marginTop="16dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap-around"
+        android:layout_height="wrap-content"
+        android:text="Coffee"
+        android:layout_below="@id/checkBox"
+        android:layout_alignLeft="@id/checkBox"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap-around"
+        android:layout_height="wrap-content"
+        android:text="Burger"
+        android:layout_below="@id/checkBox2"
+        android:layout_alignLeft="@id/checkBox2"
+        android:layout_marginTop="8dp" />
+
+    <!-- Button to place the order -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:layout_below="@id/checkBox3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+    <AutoCompleteTextView
+        android:id="@+id/txtcountries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:hint="Select a country" />
+
+    <!-- Button to open the HorizontalView activity -->
+    <Button
+        android:id="@+id/horizontal_view_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Horizontal View"
+        android:layout_below="@id/txtcountries"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- ToggleButton and TextView for toggling -->
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle"
+        android:layout_below="@id/horizontal_view_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toggleButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textSize="18sp" />
+</RelativeLayout>
